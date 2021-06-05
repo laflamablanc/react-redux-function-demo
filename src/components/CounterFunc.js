@@ -3,7 +3,9 @@ import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from './counterSlice'
 
 export function Counter() {
-  const count = useSelector((state) => state.counter.value)
+  const count = useSelector((state) => state.counter)
+  const user = useSelector((state) => state.user)
+
   const dispatch = useDispatch()
 
   return (
@@ -26,3 +28,5 @@ export function Counter() {
     </div>
   )
 }
+
+export default Counter

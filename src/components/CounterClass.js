@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { incrementCounter, decrementCounter } from '../redux/actions/counterActions.js'
-
 class Counter extends React.Component {
 
   render(){
